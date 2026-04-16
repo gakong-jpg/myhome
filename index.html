@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이가영 Portfolio | AMK Specialized Equipment Technician</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="원자 단위의 정밀함과 글로벌 역량을 갖춘 AMK 반도체 유지보수 엔지니어 이가영의 포트폴리오입니다.">
+</head>
+<body class="dark-mode">
+    <div id="page-transition"></div>
+    <!-- Background Elements -->
+    <div class="bg-noise"></div>
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-scanning-line"></div>
+    <div id="cursor-outline"></div>
+
+    <!-- Spectacular Tech Backgrounds -->
+    <div class="circuit-overlay"></div>
+    <div class="data-particles-container">
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+        <div class="particle p4"></div>
+        <div class="particle p5"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="logo">GY<span>.</span>LEE</div>
+        <ul class="nav-links">
+            <li><a href="#hero">HOME</a></li>
+            <li><a href="#academic">ABILITIES</a></li>
+            <li><a href="#timeline">HISTORY</a></li>
+            <li><a href="#tech">TECHNICAL</a></li>
+            <li><a href="#guestbook">GUESTBOOK</a></li>
+            <li><a href="#" class="btn-resume">RESUME</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- 1단계: 히어로 섹션 -->
+        <section id="hero" class="v-center">
+            <div class="container hero-content">
+                <h2 class="reveal-text">AMK EQUIPMENT SPECIALIST</h2>
+                <h1 class="reveal-text-large">
+                    글로벌 커뮤니케이션 엔지니어,<br>
+                    <span>이가영 (Lee Ga-Young)</span> 입니다.
+                </h1>
+                <p class="hero-subtext reveal-fade">
+                    4개국어 역량과 로봇 SW 전공 지식을 결합하여,<br>
+                    반도체 장비 유지보수의 글로벌 표준을 만들어가는 테크니컬 고문입니다.
+                </p>
+                <div class="hero-cta reveal-fade">
+                    <a href="#timeline" class="btn-primary">시작하기</a>
+                    <div class="scroll-indicator">
+                        <div class="mouse"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="ai-core-banner">
+                    <!-- Hyper-detailed SVG Physical AI Core / Sensor -->
+                    <svg class="ai-core-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="ultraGlow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="8" result="blur" />
+                                <feMerge>
+                                    <feMergeNode in="blur" />
+                                    <feMergeNode in="blur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <radialGradient id="coreGrad" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#00D2FF" />
+                                <stop offset="40%" stop-color="#0077FF" />
+                                <stop offset="90%" stop-color="#001835" />
+                                <stop offset="100%" stop-color="#000" />
+                            </radialGradient>
+                            <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#334d66" />
+                                <stop offset="50%" stop-color="#050A0F" />
+                                <stop offset="100%" stop-color="#112233" />
+                            </linearGradient>
+                            <linearGradient id="shutterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#001835" />
+                                <stop offset="100%" stop-color="#000" />
+                            </linearGradient>
+                            <clipPath id="lensClip">
+                                <circle cx="200" cy="200" r="110"/>
+                            </clipPath>
+                        </defs>
+                        
+                        <!-- Outer Chassis -->
+                        <polygon points="200,30 347,115 347,285 200,370 53,285 53,115" fill="none" stroke="#003366" stroke-width="2" stroke-dasharray="10 5"/>
+                        <circle cx="200" cy="200" r="150" fill="url(#metalGrad)" stroke="#0077FF" stroke-width="4"/>
+                        <circle cx="200" cy="200" r="140" fill="none" stroke="#00D2FF" stroke-width="1" stroke-dasharray="2 10" opacity="0.5"/>
+                        
+                        <!-- Inner AI Core Lens -->
+                        <circle cx="200" cy="200" r="120" fill="#050A0F" stroke="#00D2FF" stroke-width="3"/>
+                        <circle cx="200" cy="200" r="90" fill="url(#coreGrad)" stroke="#00D2FF" stroke-width="2" filter="url(#ultraGlow)" class="pulsing-core"/>
+                        
+                        <!-- Mechanical Shutter -->
+                        <g clip-path="url(#lensClip)" class="aperture" opacity="0.8">
+                            <polygon points="200,90 280,140 200,200 120,140" fill="url(#shutterGrad)" stroke="#00D2FF" stroke-width="1"/>
+                            <polygon points="280,140 280,260 200,200" fill="url(#shutterGrad)" stroke="#00D2FF" stroke-width="1"/>
+                            <polygon points="280,260 200,310 200,200" fill="url(#shutterGrad)" stroke="#00D2FF" stroke-width="1"/>
+                            <polygon points="200,310 120,260 200,200" fill="url(#shutterGrad)" stroke="#00D2FF" stroke-width="1"/>
+                            <polygon points="120,260 120,140 200,200" fill="url(#shutterGrad)" stroke="#00D2FF" stroke-width="1"/>
+                        </g>
+
+                        <!-- Scanning Reticle Rings -->
+                        <circle cx="200" cy="200" r="70" fill="none" stroke="rgba(0,210,255,0.7)" stroke-width="2" stroke-dasharray="10 30" class="rotate-fast"/>
+                        <circle cx="200" cy="200" r="100" fill="none" stroke="#0077FF" stroke-width="8" stroke-dasharray="60 40" class="rotate-slow-reverse"/>
+                    </svg>
+
+                    <!-- Physical Robot Arm -->
+                    <div class="physical-robot-arm">
+                        <svg class="arm-svg" viewBox="0 0 400 400">
+                            <g class="arm-base">
+                                <rect x="350" y="100" width="40" height="200" rx="10" fill="#112233" stroke="#0077FF"/>
+                            </g>
+                            <g class="arm-segment-1">
+                                <rect x="250" y="180" width="120" height="20" rx="10" fill="#001835" stroke="#0077FF"/>
+                                <circle cx="370" cy="190" r="15" fill="#050A0F" stroke="#0077FF"/>
+                            </g>
+                            <g class="arm-segment-2">
+                                <rect x="150" y="185" width="110" height="10" rx="5" fill="#00D2FF" stroke="#001835"/>
+                                <circle cx="260" cy="190" r="10" fill="#050A0F" stroke="#00D2FF"/>
+                            </g>
+                            <g class="arm-gripper">
+                                <path d="M120 170 L150 190 L120 210" fill="none" stroke="#00D2FF" stroke-width="3"/>
+                                <!-- Holographic Wafer -->
+                                <g class="wafer-group">
+                                    <circle cx="100" cy="190" r="40" fill="rgba(0, 210, 255, 0.1)" stroke="#00D2FF" stroke-width="1" stroke-dasharray="5 5" class="floating-wafer"/>
+                                    <path d="M70 190 L130 190 M100 160 L100 220" stroke="#00D2FF" stroke-width="0.5" opacity="0.3"/>
+                                    <circle cx="100" cy="190" r="20" fill="none" stroke="#00D2FF" stroke-width="0.5" opacity="0.2"/>
+                                </g>
+
+                                <!-- Scanning Beam -->
+                                <path d="M150 190 L200 200" stroke="rgba(0, 210, 255, 0.5)" stroke-width="20" filter="url(#ultraGlow)" class="scanning-beam"/>
+                                
+                                <!-- Electric Arcs -->
+                                <path d="M130 180 Q160 170 180 190" fill="none" stroke="#00D2FF" stroke-width="1" class="electric-arc arc-1"/>
+                                <path d="M135 200 Q165 215 190 205" fill="none" stroke="#00D2FF" stroke-width="1" class="electric-arc arc-2"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Tech HUD Elements -->
+                    <div class="tech-hud">
+                        <div class="hud-line">COORD: X-102.5 Y-402.1</div>
+                        <div class="hud-line">ROBOT_ARM: ONLINE</div>
+                        <div class="hud-line">WAFER_DETECTED: TRUE</div>
+                        <div class="hud-progress"><div class="bar"></div></div>
+                    </div>
+
+                    <!-- Holographic Multi-lingual Sync -->
+                    <div class="holo-display pro">
+                        <div class="holo-screen">
+                            <span class="holo-status">SYSTEM SYNC...</span>
+                            <h4 id="holo-lang">Multilingual Active</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- People Interaction Layer -->
+                <div class="people-interaction">
+                    <div class="person node-1">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="chat-pop">Technical Support?</div>
+                    </div>
+                    <div class="person node-2">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="chat-pop">Solutions Ready!</div>
+                    </div>
+                    <div class="person node-3">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="chat-pop">Global Response</div>
+                    </div>
+                </div>
+                <!-- Data Ticker -->
+                <div class="data-ticker">
+                    <div class="ticker-item"><span>SYSTEM STATUS</span> ONLINE</div>
+                    <div class="ticker-item"><span>UPTIME</span> 99.99%</div>
+                    <div class="ticker-item"><span>PRECISION</span> ANGSTROM ERA READY</div>
+                    <div class="ticker-item"><span>GLOBAL</span> 4 LANGUAGES SYNCED</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. ACADEMIC & TECHNICAL TRACK - EXPANDED -->
+        <section id="academic">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">02. MASTERED DOMAINS</span>
+                    <h2>교과목 기반 핵심 역량</h2>
+                    <p>로봇소프트웨어과 전공 과정을 통해 완성된 엔지니어링 포트폴리오</p>
+                    <div class="abilities-toggle-area">
+                        <button id="btn-toggle-abilities" class="btn-primary">View Core Abilities</button>
+                    </div>
+                </div>
+                
+                <div id="academic-cards-container" class="academic-grid-v2 hidden-panel">
+                    <!-- Cards will be dynamically inserted here via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 2단계: 인생 타임라인 -->
+        <section id="timeline" class="alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">03. GLOBAL BRIDGE</span>
+                    <h2>글로벌 커뮤니케이션 & 성장 타임라인</h2>
+                    <p>이력서 너머의 집착과 적응력을 시각화합니다.</p>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item left reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <h3>2010 - 2016</h3>
+                            <h4>중국 광둥성 동관(Dongguan) 거주</h4>
+                            <p>6년의 현지 생활을 통해 원어민 수준의 중국어 역량과 다양한 문화권에 대한 뛰어난 적응력을 확보했습니다.</p>
+                            <span class="tag">Global Bridge</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <h3>2025.03</h3>
+                            <h4>동양미래대학교 로봇소프트웨어과</h4>
+                            <p>로봇 제어의 핵심인 PLC 및 ROS2 기반 기술적 토대를 구축하며 정밀 제어 공학의 기틀을 다졌습니다.</p>
+                            <span class="tag">Technical Foundation</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <h3>2026.01</h3>
+                            <h4>싱가포르 어학연수 및 글로벌 트레이닝</h4>
+                            <p>영어 역량 보완을 통해 4개국어 커뮤니케이션을 완성하며 글로벌 엔지니어로서의 협업 준비를 마쳤습니다.</p>
+                            <span class="tag">4 Multi-lingual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3단계: 기술적 성과 -->
+        <section id="tech" class="alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">02. PERFORMANCE</span>
+                    <h2>기술적 문제 해결 (STAR Analysis)</h2>
+                    <p>AMK 장비 가동률(Uptime) 극대화를 위한 검증된 성과</p>
+                </div>
+
+                <div class="project-grid">
+                    <div class="project-card reveal-up">
+                        <div class="card-image">
+                            <!-- SVG Placeholder for Tech visualization -->
+                            <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="#001835"/>
+                                <path d="M50 150 L100 120 L150 140 L200 80 L250 100 L300 40 L350 60" stroke="#00D2FF" stroke-width="2"/>
+                                <circle cx="300" cy="40" r="4" fill="#E94560"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3>PLC 로직 최적화를 통한 구동 오차 제어</h3>
+                            <div class="star-methods">
+                                <div class="star"><strong>S/T</strong> 반도체 공정 내 특정 구동 장비의 빈번한 오차 발생</div>
+                                <div class="star"><strong>A</strong> 수치 해석 및 PLC 로직 최적화 알고리즘 적용</div>
+                                <div class="star highlight"><strong>R</strong> <span>물리적 오차 범위 15% 단축</span> 및 <span>장비 가동률 10% 향상</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="card-image">
+                            <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="200" fill="#001835"/>
+                                <circle cx="200" cy="100" r="60" stroke="#00D2FF" stroke-width="1" stroke-dasharray="4 4"/>
+                                <path d="M140 100 H260 M200 40 V160" stroke="#00D2FF" stroke-opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3>SCADA 기반 스마트 팩토리 모니터링 구축</h3>
+                            <div class="star-methods">
+                                <div class="star"><strong>S/T</strong> 실시간 데이터 분석 부재로 인한 예방 정비 지연</div>
+                                <div class="star"><strong>A</strong> Ignition SCADA 연동 및 대시보드 커스텀 설계</div>
+                                <div class="star highlight"><strong>R</strong> 장애 대응 시간 30% 감축 및 데이터 모델링 정확도 확보</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: GUESTBOOK SECTION -->
+        <section id="guestbook">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">04. CONNECT</span>
+                    <h2>Guestbook</h2>
+                    <p>발자취를 남겨주세요. 모든 피드백과 연락을 환영합니다.</p>
+                </div>
+                
+                <div class="guestbook-container">
+                    <div class="guestbook-form reveal-left">
+                        <h3>Leave a Message</h3>
+                        <form id="gb-form">
+                            <div class="form-group">
+                                <label for="gb-name">Name</label>
+                                <input type="text" id="gb-name" required placeholder="엔지니어 김철수">
+                            </div>
+                            <div class="form-group">
+                                <label for="gb-email">Email (Optional)</label>
+                                <input type="email" id="gb-email" placeholder="chulsoo@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="gb-message">Message</label>
+                                <textarea id="gb-message" required rows="4" placeholder="포트폴리오 잘 봤습니다!"></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Submit Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="guestbook-list reveal-right">
+                        <h3>Recent Messages</h3>
+                        <div id="gb-messages" class="messages-wrapper">
+                            <!-- Messages will be injected here via JS -->
+                            <div class="gb-loading">Loading messages...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 푸터 및 CALL TO ACTION -->
+        <footer id="contact">
+            <div class="container">
+                <h2>AMK의 내일을 함께 준비합니다.</h2>
+                <div class="footer-buttons">
+                    <a href="mailto:gakong@dongyang.ac.kr" class="btn-primary">이메일 문의</a>
+                    <a href="#" class="btn-outline">PDF 포트폴리오 다운로드</a>
+                </div>
+                <div class="footer-info">
+                    <p>© 2026 GA-YOUNG LEE. Portfolio Optimized for Applied Materials Korea.</p>
+                    <p>gakong@dongyang.ac.kr</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container">
+        <div class="chatbot-modal" id="chat-modal">
+            <div class="chatbot-header">
+                <div class="bot-avatar">AI</div>
+                <div class="bot-info">
+                    <h4>AMK Assistant</h4>
+                    <p>Usually replies instantly</p>
+                </div>
+            </div>
+            <div class="chatbot-messages" id="chat-messages">
+                <div class="chat-bubble bot">안녕하세요! 포트폴리오에 관련해 질문이 있으신가요? 편하게 말씀해주세요. 😊</div>
+            </div>
+            <form class="chatbot-input" id="chat-form">
+                <input type="text" id="chat-input" placeholder="메시지 입력..." required>
+                <button type="submit">➤</button>
+            </form>
+        </div>
+        <div class="chatbot-toggle" id="chat-toggle">
+            💬
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
